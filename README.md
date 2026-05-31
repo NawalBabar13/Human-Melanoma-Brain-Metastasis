@@ -1,4 +1,4 @@
-# Melanoma Brain Metastasis — Single-Cell Atlas
+# Melanoma Brain Metastasis 
 ### Reproduction Project | Special Topics in Bioinformatics
 ### Member 1(Nawal Babar) — Paper Understanding & README:Carefully read the full paper including all supplemental methods and figures, then wrote the complete repository README covering the purpose, background, methodology, results, and figures summary in plain language
 ### Member 2 (Manal Tufail)— Tumor Cell Reproduction Notebooks:Reproduced Figures 1, 2, and 3 focusing on the cancer cell side of the atlas
@@ -341,8 +341,8 @@ Melanoma_Brain_Metastasis/
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/Melanoma_Brain_Metastasis.git
-cd Melanoma_Brain_Metastasis
+git clone https://github.com/washma-sajjad/Human-Melanoma_Brain_Metastasis.git
+cd Human-Melanoma_Brain_Metastasis
 ```
 
 ### Step 2: Get the Data
@@ -450,7 +450,7 @@ Each notebook is self-contained and includes:
 
 | Member | Role | Deliverables |
 |--------|------|--------------|
-| **Member 1 (You)** | Paper Understanding & README | This README; Introduction & Background presentation slides |
+| Member 1 | Paper Understanding & README | This README; Introduction & Background presentation slides |
 | Member 2 | Tumor Cell Notebooks | Figure 1 (UMAP atlas), Figure 2 (CNA), Figure 3 (NMF/neuronal) |
 | Member 3 | Immune Cell Notebooks | Figure 4 (Spatial), Figure 5 (T cells), Figure 6 (Myeloid) |
 | Member 4 | Final Presentation & Notebook | Full slide deck (18 slides), Figure 7 (B→Plasma), GitHub QA |
@@ -481,6 +481,4 @@ Each notebook is self-contained and includes:
 
 ---
 
-*README prepared by Member 1 — based on careful reading of Biermann, Melms et al., Cell 2022, including all supplemental methods and figures.*
 
-*Last updated: May 2026*
