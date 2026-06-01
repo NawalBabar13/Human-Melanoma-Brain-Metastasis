@@ -1,9 +1,9 @@
-# Melanoma Brain Metastasis 
+# Melanoma Brain Metastasis — Single-Cell Atlas
 ### Reproduction Project | Special Topics in Bioinformatics
 ### Member 1(Nawal Babar) — Paper Understanding & README:Carefully read the full paper including all supplemental methods and figures, then wrote the complete repository README covering the purpose, background, methodology, results, and figures summary in plain language
 ### Member 2 (Manal Tufail)— Tumor Cell Reproduction Notebooks:Reproduced Figures 1, 2, and 3 focusing on the cancer cell side of the atlas
 ### Member 3(Ashna Abrar) — Immune Cell Reproduction Notebooks:Reproduced Figures 4, 5, and 6 covering the tumor microenvironment 
-### Member 4 (Washma Sajjad) — Final Presentation & Validation Notebook:Reproduced Figure 7 on the B cell to plasma cell differentiation trajectory and built the complete 18-slide presentation integrating findings from all members 
+### Member 4 (Washma Sajjad) — Final Presentation & Validation Notebook:Reproduced Figure 5I–K on the B cell to plasma cell differentiation trajectory (and supplemental Figure S7D–F on immunoglobulin chain sharing), and built the complete 18-slide presentation integrating findings from all members 
 > **Original Paper:** Biermann, Melms et al., *Cell* 185, 2591–2608 (July 7, 2022)  
 > **DOI:** https://doi.org/10.1016/j.cell.2022.06.007  
 > **Original Repo:** https://github.com/IzarLab/Melanoma_Brain_Metastasis
@@ -27,7 +27,7 @@
 
 ---
 
-## 1. What This Paper Is About (In Plain Terms)
+## 1. What This Paper Is About 
 
 Imagine melanoma (skin cancer) that spreads to the brain. Once it gets there, it behaves very differently from melanoma that spreads to other parts of the body like the liver or lymph nodes — it's harder to treat, patients respond less well to therapies, and doctors don't fully understand why.
 
@@ -285,21 +285,25 @@ The spatial data painted a more nuanced picture:
 
 ## 7. Figures Summary
 
-| Figure | What It Shows | Key Message |
-|--------|---------------|-------------|
-| **Figure 1** | Study design + fresh vs. frozen comparison | snRNA-seq from frozen tissue is as good as fresh; less stress artifact |
-| **Figure 2** | Global UMAP of all 114K cells + CNA analysis + in vivo metastasis | MBM has higher chromosomal instability; MBM cell lines home to brain in mice |
-| **Figure 3** | Cancer cell programs, NMF metaprograms, NCAM1 validation | Brain metastasis cancer cells adopt a neuronal-like state (MP7); confirmed at protein level |
-| **Figure 4** | Myeloid landscape — macrophages, microglia | MBM macrophages are more pro-tumorigenic; microglia have activated SPP1+ subpopulation |
-| **Figure 5** | T/NK cells + B/plasma cells + TCR clonality | More exhausted T cells in MBM but with lower checkpoints; intra-tumoral B→plasma differentiation |
-| **Figure 6** | SlideSeqV2 spatial transcriptomics | Plasma cell clusters, spatially variable immune/metabolic programs, TIMP1 anti-correlation with MHC-I |
-| **Figure S1** | Workflow + QC + integration benchmarking | CCA/Seurat integration method was best by iLISI/cLISI metrics |
-| **Figure S2** | Full cellular landscape + organotropism | 26 distinct cell types; 5B1 vs 4L organotropism experiments |
-| **Figure S3** | Cancer cell variability drivers + SCENIC/VIPER TFs | MITF + RELB enriched in MBM; SOX4 + BACH1 in ECM |
-| **Figure S4** | ATAC-seq, TOBIAS footprinting, MP7 pathway enrichment | Chromatin accessibility confirms MBM vs ECM differences |
-| **Figure S5** | Myeloid subtype detail | MDM subtypes, microglia markers, RNA velocity of macrophage differentiation |
-| **Figure S6** | T cell atlas (ProjecTILs) | Reference atlas validation; tech-independent annotation of T cell states |
-| **Figure S7** | TCR clonality + B/plasma details + SlideSeq cell type fractions | Intra-tumoral B-to-plasma differentiation with shared variable chains |
+> **Note on figure numbering:** This paper has **6 main figures** (Figures 1–6) and **7 supplemental figures** (S1–S7). Supplemental figures (prefix "S") are additional panels that support the main results but didn't fit in the main paper — they are referenced throughout the text as "Figure S1", "Figure S2", etc. There is **no Figure 7** in this paper; the B→plasma cell differentiation content is Figure 5I–K.
+
+> **Note on reproduction:** Each team notebook reproduces the key panels of each figure. Because main figures each contain many sub-panels (e.g., Figure 3 has panels A–P), not every panel is reproduced — see Section 8 for the notebook-to-figure mapping.
+
+| Figure | What It Shows | Key Message | Reproduced In |
+|--------|---------------|-------------|---------------|
+| **Figure 1** | Study design + fresh vs. frozen comparison | snRNA-seq from frozen tissue is as good as fresh; less stress artifact | `Fig1_global_UMAP_atlas.ipynb` |
+| **Figure 2** | Global UMAP of all 114K cells + CNA analysis + in vivo metastasis | MBM has higher chromosomal instability; MBM cell lines home to brain in mice | `Fig2_CNA_instability.ipynb` |
+| **Figure 3** | Cancer cell programs, NMF metaprograms, NCAM1 validation | Brain metastasis cancer cells adopt a neuronal-like state (MP7); confirmed at protein level | `Fig3_NMF_neuronal_program.ipynb` |
+| **Figure 4** | Myeloid landscape — macrophages, microglia | MBM macrophages are more pro-tumorigenic; microglia have activated SPP1+ subpopulation | `Fig4_myeloid_macrophages.ipynb` |
+| **Figure 5** | T/NK cells + B/plasma cells + TCR clonality | More exhausted T cells in MBM but with lower checkpoints; intra-tumoral B→plasma differentiation (panels I–K) | `Fig5_T_cell_exhaustion.ipynb` + `Fig5_Bcell_plasma.ipynb` |
+| **Figure 6** | SlideSeqV2 spatial transcriptomics | Plasma cell clusters, spatially variable immune/metabolic programs, TIMP1 anti-correlation with MHC-I | `Fig6_spatial_transcriptomics.ipynb` |
+| **Figure S1** | Workflow + QC + integration benchmarking | Technical supplement to Fig 1; CCA/Seurat integration method was best by iLISI/cLISI metrics | (Described in Fig1 notebook) |
+| **Figure S2** | Full cellular landscape + organotropism details | Technical supplement to Fig 2; 26 distinct cell types; 5B1 vs 4L organotropism experiments | (Described in Fig2 notebook) |
+| **Figure S3** | Cancer cell variability drivers + SCENIC/VIPER TFs | Technical supplement to Fig 3; MITF + RELB enriched in MBM; SOX4 + BACH1 in ECM | (Described in Fig3 notebook) |
+| **Figure S4** | ATAC-seq, TOBIAS footprinting, MP7 pathway enrichment, NCAM1 gating | Technical supplement to Fig 3; chromatin accessibility confirms MBM vs ECM differences | (Described in Fig3 notebook) |
+| **Figure S5** | Myeloid subtype detail | Technical supplement to Fig 4; MDM subtypes, microglia markers, RNA velocity of macrophage differentiation | (Described in Fig4 notebook) |
+| **Figure S6** | T cell atlas (ProjecTILs) | Technical supplement to Fig 5; reference atlas validation; tech-independent annotation of T cell states | (Described in Fig5 T cell notebook) |
+| **Figure S7** | TCR clonality + B/plasma IG chain details + SlideSeq cell type fractions | Technical supplement to Figs 5–6; intra-tumoral B-to-plasma differentiation with shared variable chains | (Described in Fig5 B cell notebook) |
 
 ---
 
@@ -308,41 +312,40 @@ The spatial data painted a more nuanced picture:
 ```
 Melanoma_Brain_Metastasis/
 │
-├── README.md                          ← You are here (Member 1)
+├── README.md                          
 │
 ├── notebooks/
 │   ├── member2_tumor_cells/
-│   │   ├── Fig1_global_UMAP_atlas.ipynb
-│   │   ├── Fig2_CNA_instability.ipynb
-│   │   └── Fig3_NMF_neuronal_program.ipynb
+│   │   ├── Fig1_global_UMAP_atlas.ipynb        ← Study design, fresh vs frozen QC
+│   │   ├── Fig2_CNA_instability.ipynb           ← CNA analysis, organotropism
+│   │   └── Fig3_NMF_neuronal_program.ipynb      ← Cancer programs, MP7, NCAM1
 │   │
 │   ├── member3_immune_cells/
-│   │   ├── Fig4_spatial_transcriptomics.ipynb
-│   │   ├── Fig5_T_cell_exhaustion.ipynb
-│   │   └── Fig6_myeloid_macrophage.ipynb
+│   │   ├── Fig4_myeloid_macrophages.ipynb       ← MDM clusters, microglia, CD163
+│   │   ├── Fig5_T_cell_exhaustion.ipynb         ← TOX+/TCF7+ T cells, TCR clonality
+│   │   └── Fig6_spatial_transcriptomics.ipynb   ← SlideSeqV2, RCTD, Moran's I
 │   │
 │   └── member4_final/
-│       └── Fig7_Bcell_plasma_differentiation.ipynb
+│       └── Fig5_Bcell_plasma_differentiation.ipynb  ← Fig 5I–K: B→plasma trajectory (S7D–F)
 │
 ├── data/
 │   └── README_data.md                 ← Instructions for data download from GEO/dbGaP
 │
 ├── figures/
-│   └── reproduced/                    ← Output figures go here
+│   └── reproduced/                    
 │
 └── presentation/
-    └── slides.pptx                    ← Member 4 builds this
-```
+    └── slides.pptx                    
 
 ---
 
-## 9. How to Reproduce (Quick Start)
+## 9. How to Reproduce 
 
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/washma-sajjad/Human-Melanoma_Brain_Metastasis.git
-cd Human-Melanoma_Brain_Metastasis
+git clone https://github.com/YOUR_USERNAME/Melanoma_Brain_Metastasis.git
+cd Melanoma_Brain_Metastasis
 ```
 
 ### Step 2: Get the Data
@@ -450,14 +453,14 @@ Each notebook is self-contained and includes:
 
 | Member | Role | Deliverables |
 |--------|------|--------------|
-| Member 1 | Paper Understanding & README | This README; Introduction & Background presentation slides |
-| Member 2 | Tumor Cell Notebooks | Figure 1 (UMAP atlas), Figure 2 (CNA), Figure 3 (NMF/neuronal) |
-| Member 3 | Immune Cell Notebooks | Figure 4 (Spatial), Figure 5 (T cells), Figure 6 (Myeloid) |
-| Member 4 | Final Presentation & Notebook | Full slide deck (18 slides), Figure 7 (B→Plasma), GitHub QA |
+| **Member 1 (Nawal Babar)** | Paper Understanding & README | This README; Introduction & Background presentation slides |
+| Member 2 (Manal Tufail) | Tumor Cell Notebooks | Figure 1 (UMAP atlas + QC), Figure 2 (CNA + organotropism), Figure 3 (NMF + neuronal program) |
+| Member 3 (Ashna Abrar) | Immune Cell Notebooks | Figure 4 (Myeloid/macrophages), Figure 5 (T cells + TCR), Figure 6 (Spatial transcriptomics) |
+| Member 4 (Washma Sajjad) | Final Presentation & Notebook | Figure 5I–K (B→Plasma differentiation, supplemented by S7D–F), full slide deck (18 slides) |
 
 ---
 
-## Concepts Glossary (For the Layman)
+## Concepts Glossary 
 
 | Term | Plain-English Meaning |
 |------|-----------------------|
@@ -481,4 +484,7 @@ Each notebook is self-contained and includes:
 
 ---
 
+
+
+*Last updated: May 2026*
 
