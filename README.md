@@ -310,34 +310,39 @@ The spatial data painted a more nuanced picture:
 ## 8. Reproduction Project Structure
 
 ```
-Melanoma_Brain_Metastasis/
+Human-Melanoma-Brain-Metastasis/
 │
-├── README.md                          
+├── README.md
 │
-├── notebooks/
-│   ├── member2_tumor_cells/
-│   │   ├── Fig1_global_UMAP_atlas.ipynb        ← Study design, fresh vs frozen QC
-│   │   ├── Fig2_CNA_instability.ipynb           ← CNA analysis, organotropism
-│   │   └── Fig3_NMF_neuronal_program.ipynb      ← Cancer programs, MP7, NCAM1
-│   │
-│   ├── member3_immune_cells/
-│   │   ├── Fig4_myeloid_macrophages.ipynb       ← MDM clusters, microglia, CD163
-│   │   ├── Fig5_T_cell_exhaustion.ipynb         ← TOX+/TCF7+ T cells, TCR clonality
-│   │   └── Fig6_spatial_transcriptomics.ipynb   ← SlideSeqV2, RCTD, Moran's I
-│   │
-│   └── member4_final/
-│       └── Fig5_Bcell_plasma_differentiation.ipynb  ← Fig 5I–K: B→plasma trajectory (S7D–F)
-│
-├── data/
-│   └── README_data.md                 ← Instructions for data download from GEO/dbGaP
-│
-├── figures/
-│   └── reproduced/                    
-│
-└── presentation/
-    └── slides.pptx                    
-
----
+└── reproduction scripts/
+    ├── 01_global_umap/
+    │   ├── output figures/
+    │   └── 01_Global_UMAP_Atlas.ipynb
+    │
+    ├── 02_cna_analysis/
+    │   ├── output figures/
+    │   └── 02_CNA_Instability.ipynb
+    │
+    ├── 03_cancer_cell_states/
+    │   ├── output figures/
+    │   └── 03_NMF_Cancer_States.ipynb
+    │
+    ├── 04_spatial_analysis/
+    │   ├── output figures/
+    │   └── Figure4_Spatial_Transcriptomics.ipynb
+    │
+    ├── 05__tcell_exhaustion/
+    │   ├── output figures/
+    │   └── Figure5_T_Cell_Exhaustion.ipynb
+    │
+    ├── 06__myeloid_analysis/
+    │   ├── output figures/
+    │   └── Figure6_Myeloid_Macrophages.ipynb
+    │
+    └── 07_bcell_plasma_differentiation/
+        ├── output figures/
+        └── 07_bcell_plasma_differentiation.ipynb
+```
 
 ## 9. How to Reproduce 
 
