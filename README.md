@@ -108,7 +108,7 @@ Patient Samples (Treatment-Naive)
     proteomics,   MBM05 → mice)        patient samples)
     ATAC-seq)
 ```
-![Figure 1F – Cell-type composition per patient](reproduction%20scripts/01_global_umap/output%20figures/Fig1F_composition.png)
+![Figure 1F – Cell-type composition per patient](reproduction%20scripts/01_global_umap/output%20figures/Fig1F_composition-1.png)
 **Key design choice:** All specimens were collected BEFORE any treatment. This is called "treatment-naive" and it's important because it means the results reflect the actual biology of the disease, not changes caused by prior therapy.
 
 **Another key innovation:** They showed that frozen archival tissue (some samples >15 years old!) could be profiled with snRNA-seq and give results comparable to fresh tissue. This massively expands what historical tissue banks can be used for.
@@ -233,8 +233,8 @@ Cancer cells in MBM showed significantly more genome alteration than ECM — mor
 - InferCNV from single-cell data
 - Whole-exome sequencing from an external cohort (Fischer et al.)
 - Micronuclei counting (a physical measure of CIN) in matched MBM/ECM cell lines
-![Figure 2C – MBM vs MPM CNA burden](reproduction%20scripts/02_cna_analysis/output%20figures/Fig2B_CNA_violin.png)
-![Figure 2D – Per-patient CNA burden](reproduction%20scripts/02_cna_analysis/output%20figures/Fig2D_patient_CNA.png)
+![Figure 2C – MBM vs MPM CNA burden](reproduction%20scripts/02_cna_analysis/output%20figures/Fig2B_CNA_violin-1.png)
+![Figure 2D – Per-patient CNA burden](reproduction%20scripts/02_cna_analysis/output%20figures/Fig2D_patient_CNA-1.png)
 
 The MBM cell line (5B1) also had higher migratory capacity in vitro and, when injected into mice, specifically spread to the brain — while the matched ECM cell line (4L) went to the liver instead. This shows that CIN isn't just a byproduct of being in the brain — it's associated with the very capacity to metastasize there.
 
@@ -252,8 +252,8 @@ This neuronal-like signature was:
 - Verified at the protein level: NCAM1 protein was significantly enriched in cancer cells in MBM vs. ECM by multiplexed immunofluorescence on 42 patient samples
 
 Why does this matter? Melanoma comes from neural crest cells embryologically, so some neural gene expression is expected. But this goes beyond baseline — MBM cells seem to be actively taking on more neuron-like characteristics, possibly to better fit into and survive in the brain microenvironment.
-![Figure 3C – Neuronal program key finding](reproduction%20scripts/03_cancer_cell_states/output_figures/Fig3C%20neuronal.png)
-![Figure 3D – Neuronal genes MBM vs MPM](reproduction%20scripts/03_cancer_cell_states/output_figures/Fig3D%20neuronal_dotp.png)
+![Figure 3C – Neuronal program key finding](reproduction%20scripts/03_cancer_cell_states/output_figures/Fig3C%20neuronal-1.png)
+![Figure 3D – Neuronal genes MBM vs MPM](reproduction%20scripts/03_cancer_cell_states/output_figures/Fig3D%20neuronal_dot-1.png)
 
 ### 6.4 Macrophages in Brain Tumors Are Pro-Tumor (Figure 4)
 
