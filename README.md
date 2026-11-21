@@ -1,6 +1,7 @@
 # Melanoma Brain Metastasis — Single-Cell Atlas
 ### Reproduction Project | Special Topics in Bioinformatics
 ### Member 1(Nawal Babar) — Notebook Reproduction, Results Validation & Documentation: Contributed to reproducing an analysis notebook and comparing its outputs with the published results to assess agreement. Reviewed the paper, supplementary methods, and figures to understand the analysis and interpret the reproduced findings. Wrote the repository README, documenting the study background, methodology, results, and figure summaries.
+Immune Cell Analysis, Results Validation & Documentation: Co-reproduced the immune cell analysis notebooks for Figures 4, 5, and 6 with Ashna Abrar, focusing on the tumor microenvironment. Compared reproduced outputs with the published findings to assess agreement and reviewed the supplementary methods to interpret the results.
 ### Member 2 (Manal Tufail)— Tumor Cell Reproduction Notebooks:Reproduced Figures 1, 2, and 3 focusing on the cancer cell side of the atlas
 ### Member 3(Ashna Abrar) — Immune Cell Reproduction Notebooks:Reproduced Figures 4, 5, and 6 covering the tumor microenvironment 
 ### Member 4 (Washma Sajjad) — Final Presentation & Validation Notebook:Reproduced Figure 5I–K on the B cell to plasma cell differentiation trajectory (and supplemental Figure S7D–F on immunoglobulin chain sharing), and built the complete 18-slide presentation integrating findings from all members 
